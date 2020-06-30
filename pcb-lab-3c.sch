@@ -169,8 +169,8 @@ U 1 1 5FB0DCC9
 P 7000 3200
 AR Path="/5FB0DCC9" Ref="U?"  Part="1" 
 AR Path="/5FAF0069/5FB0DCC9" Ref="U?"  Part="1" 
-F 0 "U?" H 7150 3450 50  0000 C CNN
-F 1 "INA181" H 7200 3350 50  0000 C CNN
+F 0 "U?" H 7100 3450 50  0000 C CNN
+F 1 "INA181" H 7150 3350 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7050 3250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 7150 3350 50  0001 C CNN
 	1    7000 3200
@@ -290,7 +290,7 @@ $EndComp
 Wire Wire Line
 	4550 2050 4550 2100
 Wire Wire Line
-	4550 2050 4850 2050
+	4550 2050 4750 2050
 $Comp
 L power:GND #PWR?
 U 1 1 5FB0DD0B
@@ -392,7 +392,7 @@ F 3 "" H 7350 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 3200 6600 3200
-Text GLabel 6600 3200 0    50   Input ~ 0
+Text GLabel 6500 3200 0    50   Input ~ 0
 uC_ADC
 $Comp
 L Device:C_Small C?
@@ -433,8 +433,8 @@ F 3 "" H 6600 3750 50  0001 C CNN
 	1    6600 3750
 	1    0    0    -1  
 $EndComp
-Text Notes 3150 3550 0    50   ~ 0
-uC PWM-controlled constant current source:\n- 1st OpAmp is active filter\n- 2nd OpAmp controlls current with transistor\n- INA181 provides gain for uC
+Text Notes 4050 3450 0    50   ~ 0
+uC PWM-controlled constant current source:\n- 1st OpAmp is active filter\n- 2nd OpAmp controls current with transistor\n- INA181 provides gain for uC ADC read
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 5FB0DD5C
@@ -651,4 +651,289 @@ Wire Wire Line
 Connection ~ 8400 2800
 Wire Wire Line
 	8400 2800 8400 2850
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5FCE9825
+P 1700 4800
+AR Path="/5F9D006C/5FCE9825" Ref="J?"  Part="1" 
+AR Path="/5FA7628C/5FCE9825" Ref="J?"  Part="1" 
+F 0 "J?" H 1758 5270 50  0000 C CNN
+F 1 "USB_B_Micro" H 1758 5177 50  0000 C CNN
+F 2 "" H 1850 4750 50  0001 C CNN
+F 3 "~" H 1850 4750 50  0001 C CNN
+	1    1700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5200 1700 5200
+Wire Wire Line
+	1700 5200 1700 5250
+Connection ~ 1700 5200
+$Comp
+L power:GND #PWR?
+U 1 1 5FCE982E
+P 1700 5250
+AR Path="/5FCE982E" Ref="#PWR?"  Part="1" 
+AR Path="/5F9D006C/5FCE982E" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7628C/5FCE982E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1700 5000 50  0001 C CNN
+F 1 "GND" H 1705 5077 50  0000 C CNN
+F 2 "" H 1700 5250 50  0001 C CNN
+F 3 "" H 1700 5250 50  0001 C CNN
+	1    1700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FCE9834
+P 2200 4550
+AR Path="/5FCE9834" Ref="#PWR?"  Part="1" 
+AR Path="/5F9D006C/5FCE9834" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7628C/5FCE9834" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2200 4400 50  0001 C CNN
+F 1 "+5V" H 2215 4723 50  0000 C CNN
+F 2 "" H 2200 4550 50  0001 C CNN
+F 3 "" H 2200 4550 50  0001 C CNN
+	1    2200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4600 2200 4600
+Wire Wire Line
+	2200 4600 2200 4550
+NoConn ~ 2000 4800
+NoConn ~ 2000 4900
+NoConn ~ 2000 5000
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FCE983F
+P 2650 4600
+AR Path="/5F9D006C/5FCE983F" Ref="J?"  Part="1" 
+AR Path="/5FA7628C/5FCE983F" Ref="J?"  Part="1" 
+F 0 "J?" H 2650 4700 50  0000 C CNN
+F 1 "Conn_01x02" H 2567 4727 50  0001 C CNN
+F 2 "" H 2650 4600 50  0001 C CNN
+F 3 "~" H 2650 4600 50  0001 C CNN
+	1    2650 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FCE9845
+P 2950 4550
+AR Path="/5FCE9845" Ref="#PWR?"  Part="1" 
+AR Path="/5F9D006C/5FCE9845" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7628C/5FCE9845" Ref="#PWR?"  Part="1" 
+AR Path="/5FAF0069/5FCE9845" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2950 4400 50  0001 C CNN
+F 1 "+5V" H 2965 4723 50  0000 C CNN
+F 2 "" H 2950 4550 50  0001 C CNN
+F 3 "" H 2950 4550 50  0001 C CNN
+	1    2950 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4600 2950 4600
+Wire Wire Line
+	2950 4600 2950 4550
+Wire Wire Line
+	2850 4700 2950 4700
+Wire Wire Line
+	2950 4700 2950 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5FCE984F
+P 2950 4750
+AR Path="/5FCE984F" Ref="#PWR?"  Part="1" 
+AR Path="/5F9D006C/5FCE984F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7628C/5FCE984F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2950 4500 50  0001 C CNN
+F 1 "GND" H 2955 4577 50  0000 C CNN
+F 2 "" H 2950 4750 50  0001 C CNN
+F 3 "" H 2950 4750 50  0001 C CNN
+	1    2950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FCE9855
+P 3350 4600
+AR Path="/5F9D006C/5FCE9855" Ref="J?"  Part="1" 
+AR Path="/5FA7628C/5FCE9855" Ref="J?"  Part="1" 
+F 0 "J?" H 3350 4700 50  0000 C CNN
+F 1 "Conn_01x02" H 3267 4727 50  0001 C CNN
+F 2 "" H 3350 4600 50  0001 C CNN
+F 3 "~" H 3350 4600 50  0001 C CNN
+	1    3350 4600
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3650 5200 2    50   Input ~ 0
+LOAD4+
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FCE985C
+P 6050 4600
+AR Path="/5F9D006C/5FCE985C" Ref="J?"  Part="1" 
+AR Path="/5FA7628C/5FCE985C" Ref="J?"  Part="1" 
+AR Path="/5FAF0069/5FCE985C" Ref="J?"  Part="1" 
+F 0 "J?" H 6050 4700 50  0000 C CNN
+F 1 "Conn_01x02" H 5967 4727 50  0001 C CNN
+F 2 "" H 6050 4600 50  0001 C CNN
+F 3 "~" H 6050 4600 50  0001 C CNN
+	1    6050 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4700 3650 4700
+Wire Wire Line
+	3650 4700 3650 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5FCE9864
+P 3650 4750
+AR Path="/5FCE9864" Ref="#PWR?"  Part="1" 
+AR Path="/5F9D006C/5FCE9864" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7628C/5FCE9864" Ref="#PWR?"  Part="1" 
+AR Path="/5FAF0069/5FCE9864" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3650 4500 50  0001 C CNN
+F 1 "GND" H 3655 4577 50  0000 C CNN
+F 2 "" H 3650 4750 50  0001 C CNN
+F 3 "" H 3650 4750 50  0001 C CNN
+	1    3650 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 4600 2    50   Input ~ 0
+LOAD4+
+Wire Wire Line
+	3550 4600 3650 4600
+Text GLabel 3650 5300 2    50   Input ~ 0
+LOAD4-
+Wire Wire Line
+	3550 5200 3650 5200
+Wire Wire Line
+	3550 5300 3650 5300
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FCEDDE2
+P 4750 1950
+F 0 "TP?" H 4700 2150 50  0000 L CNN
+F 1 "TestPoint" H 4600 2150 50  0001 L CNN
+F 2 "" H 4950 1950 50  0001 C CNN
+F 3 "~" H 4950 1950 50  0001 C CNN
+	1    4750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1950 4750 2050
+Connection ~ 4750 2050
+Wire Wire Line
+	4750 2050 4850 2050
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FCF612B
+P 6550 3000
+F 0 "TP?" V 6600 3050 50  0000 C CNN
+F 1 "TestPoint" V 6658 3072 50  0001 C CNN
+F 2 "" H 6750 3000 50  0001 C CNN
+F 3 "~" H 6750 3000 50  0001 C CNN
+	1    6550 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 3000 6600 3000
+Wire Wire Line
+	6600 3000 6600 3200
+Connection ~ 6600 3200
+Wire Wire Line
+	6600 3200 6500 3200
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5FCFB4D8
+P 5050 4700
+F 0 "J?" H 5050 4500 50  0000 C CNN
+F 1 "Conn_01x03" H 4967 4462 50  0001 C CNN
+F 2 "" H 5050 4700 50  0001 C CNN
+F 3 "~" H 5050 4700 50  0001 C CNN
+	1    5050 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5250 4600 5350 4600
+Wire Wire Line
+	5350 4600 5350 4550
+$Comp
+L power:+5V #PWR?
+U 1 1 5FD00335
+P 5350 4550
+AR Path="/5FD00335" Ref="#PWR?"  Part="1" 
+AR Path="/5F9D006C/5FD00335" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7628C/5FD00335" Ref="#PWR?"  Part="1" 
+AR Path="/5FAF0069/5FD00335" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5350 4400 50  0001 C CNN
+F 1 "+5V" H 5365 4723 50  0000 C CNN
+F 2 "" H 5350 4550 50  0001 C CNN
+F 3 "" H 5350 4550 50  0001 C CNN
+	1    5350 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 4700 2    50   Input ~ 0
+uC_PWM
+Wire Wire Line
+	5250 4700 5350 4700
+Wire Wire Line
+	5250 4800 5350 4800
+Wire Wire Line
+	5350 4800 5350 4850
+$Comp
+L power:GND #PWR?
+U 1 1 5FD0823F
+P 5350 4850
+AR Path="/5FD0823F" Ref="#PWR?"  Part="1" 
+AR Path="/5F9D006C/5FD0823F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7628C/5FD0823F" Ref="#PWR?"  Part="1" 
+AR Path="/5FAF0069/5FD0823F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5350 4600 50  0001 C CNN
+F 1 "GND" H 5355 4677 50  0000 C CNN
+F 2 "" H 5350 4850 50  0001 C CNN
+F 3 "" H 5350 4850 50  0001 C CNN
+	1    5350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4600 6350 4600
+Wire Wire Line
+	6250 4700 6350 4700
+Wire Wire Line
+	6350 4700 6350 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5FD089CB
+P 6350 4750
+AR Path="/5FD089CB" Ref="#PWR?"  Part="1" 
+AR Path="/5F9D006C/5FD089CB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7628C/5FD089CB" Ref="#PWR?"  Part="1" 
+AR Path="/5FAF0069/5FD089CB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6350 4500 50  0001 C CNN
+F 1 "GND" H 6355 4577 50  0000 C CNN
+F 2 "" H 6350 4750 50  0001 C CNN
+F 3 "" H 6350 4750 50  0001 C CNN
+	1    6350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FD22FB3
+P 3350 5200
+AR Path="/5F9D006C/5FD22FB3" Ref="J?"  Part="1" 
+AR Path="/5FA7628C/5FD22FB3" Ref="J?"  Part="1" 
+AR Path="/5FAF0069/5FD22FB3" Ref="J?"  Part="1" 
+F 0 "J?" H 3350 5300 50  0000 C CNN
+F 1 "Conn_01x02" H 3267 5327 50  0001 C CNN
+F 2 "" H 3350 5200 50  0001 C CNN
+F 3 "~" H 3350 5200 50  0001 C CNN
+	1    3350 5200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6350 4600 2    50   Input ~ 0
+uC_ADC
 $EndSCHEMATC

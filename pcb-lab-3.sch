@@ -37,4 +37,6 @@ Text Notes 4000 1250 0    50   ~ 0
 TODO: review resistor and voltage ranges
 Text Notes 6500 1250 0    50   ~ 0
 TODO: review resistor, voltage ranges\nRC-filter values
+Text Notes 5800 3250 0    50   ~ 0
+TODO:\n- high Vf LED drivers\n- BCR421 circuit
 $EndSCHEMATC
