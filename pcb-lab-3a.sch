@@ -413,8 +413,6 @@ Wire Wire Line
 Wire Wire Line
 	6550 2350 6950 2350
 Connection ~ 6550 2350
-Wire Wire Line
-	8000 2550 8000 2650
 Connection ~ 8000 2950
 Text Notes 6200 2600 0    31   ~ 0
 "slow-down"\noptional cap
@@ -434,13 +432,6 @@ Wire Wire Line
 Connection ~ 7650 2350
 Wire Wire Line
 	7650 2350 7700 2350
-Wire Wire Line
-	7650 2600 7650 2650
-Wire Wire Line
-	7650 2650 8000 2650
-Connection ~ 8000 2650
-Wire Wire Line
-	8000 2650 8000 2950
 Wire Wire Line
 	8000 2150 8000 2050
 Wire Wire Line
@@ -746,4 +737,19 @@ Text Notes 7500 5700 0    50   ~ 0
 Digital pot control
 Text Notes 8850 2750 0    50   ~ 0
 FDV301N:\n- max Vds: 25V\n- max Vgs: 8V\n- 0.35W\n\nNTR3C21NZ\n- max Vds: 20V\n- max Vgs: 8V\n- 0.47W\n
+Wire Wire Line
+	8000 2550 8000 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5FDC6F17
+P 7650 2600
+F 0 "#PWR?" H 7650 2350 50  0001 C CNN
+F 1 "GND" H 7655 2427 50  0000 C CNN
+F 2 "" H 7650 2600 50  0001 C CNN
+F 3 "" H 7650 2600 50  0001 C CNN
+	1    7650 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 8000 1900 0    50   ~ 0
+Higher voltage OK
 $EndSCHEMATC

@@ -127,16 +127,12 @@ Wire Wire Line
 Connection ~ 7800 2100
 Wire Wire Line
 	7800 2100 8050 2100
-Wire Wire Line
-	8050 2350 8050 2400
 Text GLabel 8450 1800 2    50   Input ~ 0
 LOAD4-
 Wire Wire Line
 	8450 1800 8400 1800
 Wire Wire Line
 	8400 1800 8400 1900
-Wire Wire Line
-	8400 2300 8400 2400
 $Comp
 L Device:C_Small C?
 U 1 1 5FB0DCBC
@@ -161,8 +157,6 @@ Wire Wire Line
 	7250 2450 7250 2550
 Text Notes 7250 2300 0    50   ~ 0
 opt
-Wire Wire Line
-	8050 2400 8400 2400
 $Comp
 L Amplifier_Current:INA181 U?
 U 1 1 5FB0DCC9
@@ -322,9 +316,6 @@ Wire Wire Line
 	4800 2350 4800 2150
 Wire Wire Line
 	4800 2150 4850 2150
-Wire Wire Line
-	8400 2400 8400 2550
-Connection ~ 8400 2400
 $Comp
 L Jumper:SolderJumper_2_Open JP?
 U 1 1 5FB0DD21
@@ -957,4 +948,21 @@ Wire Wire Line
 Connection ~ 8400 3200
 Wire Wire Line
 	8400 3200 8400 3250
+Wire Wire Line
+	8400 2300 8400 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5FDE63F5
+P 8050 2350
+AR Path="/5FDE63F5" Ref="#PWR?"  Part="1" 
+AR Path="/5FAF0069/5FDE63F5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 2100 50  0001 C CNN
+F 1 "GND" H 8050 2200 50  0000 C CNN
+F 2 "" H 8050 2350 50  0001 C CNN
+F 3 "" H 8050 2350 50  0001 C CNN
+	1    8050 2350
+	1    0    0    -1  
+$EndComp
+Text Notes 8400 1700 0    50   ~ 0
+Higher voltage OK
 $EndSCHEMATC

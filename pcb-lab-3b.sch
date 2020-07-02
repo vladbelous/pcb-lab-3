@@ -157,8 +157,6 @@ Wire Wire Line
 Connection ~ 8250 1800
 Wire Wire Line
 	8250 1800 8500 1800
-Wire Wire Line
-	8500 2050 8500 2100
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 5FAB2A2A
@@ -208,8 +206,6 @@ Wire Wire Line
 	8850 2250 8850 2300
 Wire Wire Line
 	8200 2250 8250 2250
-Wire Wire Line
-	8850 2000 8850 2100
 Connection ~ 8850 2250
 Wire Wire Line
 	8250 2150 8250 2250
@@ -248,11 +244,6 @@ Wire Wire Line
 	7000 2250 7700 2250
 Text Notes 7700 2000 0    50   ~ 0
 opt
-Wire Wire Line
-	8500 2100 8850 2100
-Connection ~ 8850 2100
-Wire Wire Line
-	8850 2100 8850 2250
 Text Notes 7150 2750 0    50   ~ 0
 OpAmp with pass transistor.\nPotentiometer sets current.
 $Comp
@@ -458,16 +449,12 @@ Wire Wire Line
 Connection ~ 6800 4200
 Wire Wire Line
 	6800 4200 7050 4200
-Wire Wire Line
-	7050 4450 7050 4500
 Text GLabel 7450 3900 2    50   Input ~ 0
 LOAD3-
 Wire Wire Line
 	7450 3900 7400 3900
 Wire Wire Line
 	7400 3900 7400 4000
-Wire Wire Line
-	7400 4400 7400 4500
 Wire Wire Line
 	5550 4250 5550 4650
 $Comp
@@ -492,8 +479,6 @@ Wire Wire Line
 	6250 4550 6250 4650
 Text Notes 6250 4550 0    50   ~ 0
 opt
-Wire Wire Line
-	7050 4500 7400 4500
 Text Notes 5800 6200 0    50   ~ 0
 Similar to 2-OpAmp circuit, but Rsense\nis pre-amplified with INA181.
 Wire Wire Line
@@ -506,59 +491,55 @@ Wire Wire Line
 $Comp
 L Amplifier_Current:INA181 U?
 U 1 1 5FAB2B15
-P 6850 5150
-F 0 "U?" H 7000 5400 50  0000 C CNN
-F 1 "INA181" H 7050 5300 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6900 5200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 7000 5300 50  0001 C CNN
-	1    6850 5150
+P 6700 5150
+F 0 "U?" H 6850 5400 50  0000 C CNN
+F 1 "INA181" H 6900 5300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6750 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 6850 5300 50  0001 C CNN
+	1    6700 5150
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0116
 U 1 1 5FAB2B1B
-P 6950 4850
-F 0 "#PWR0116" H 6950 4700 50  0001 C CNN
-F 1 "+5V" H 6965 5023 50  0000 C CNN
-F 2 "" H 6950 4850 50  0001 C CNN
-F 3 "" H 6950 4850 50  0001 C CNN
-	1    6950 4850
+P 6800 4850
+F 0 "#PWR0116" H 6800 4700 50  0001 C CNN
+F 1 "+5V" H 6815 5023 50  0000 C CNN
+F 2 "" H 6800 4850 50  0001 C CNN
+F 3 "" H 6800 4850 50  0001 C CNN
+	1    6800 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0117
 U 1 1 5FAB2B21
-P 6950 5450
-F 0 "#PWR0117" H 6950 5200 50  0001 C CNN
-F 1 "GND" H 6955 5277 50  0000 C CNN
-F 2 "" H 6950 5450 50  0001 C CNN
-F 3 "" H 6950 5450 50  0001 C CNN
-	1    6950 5450
+P 6800 5450
+F 0 "#PWR0117" H 6800 5200 50  0001 C CNN
+F 1 "GND" H 6805 5277 50  0000 C CNN
+F 2 "" H 6800 5450 50  0001 C CNN
+F 3 "" H 6800 5450 50  0001 C CNN
+	1    6800 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 5450 6950 5450
-Connection ~ 6950 5450
+	6600 5450 6800 5450
+Connection ~ 6800 5450
 Wire Wire Line
 	7400 4950 7250 4950
 Wire Wire Line
 	7250 4950 7250 5050
-Wire Wire Line
-	7250 5050 7150 5050
 Wire Wire Line
 	7400 5300 7400 5350
 Wire Wire Line
 	7400 5350 7250 5350
 Wire Wire Line
 	7250 5350 7250 5250
-Wire Wire Line
-	7250 5250 7150 5250
 Connection ~ 7400 5350
 Wire Wire Line
 	7400 5350 7400 5450
 Wire Wire Line
 	7400 4950 7400 5000
-Text Notes 6700 5900 0    50   ~ 0
+Text Notes 6550 5900 0    50   ~ 0
 INA181A3\ngain: 100V/V
 $Comp
 L Jumper:SolderJumper_2_Open JP?
@@ -618,9 +599,6 @@ F 3 "" H 6300 5600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6250 4650 5550 4650
-Wire Wire Line
-	7400 4500 7400 4950
-Connection ~ 7400 4500
 Connection ~ 7400 4950
 Wire Wire Line
 	5550 5150 5550 4650
@@ -639,9 +617,6 @@ Wire Wire Line
 	6250 5450 6300 5450
 Wire Wire Line
 	6300 5450 6300 5150
-Connection ~ 6300 5150
-Wire Wire Line
-	6300 5150 6550 5150
 $Comp
 L power:+5V #PWR0119
 U 1 1 5FAB2B68
@@ -1088,4 +1063,41 @@ Text Notes 7650 5200 0    50   ~ 0
 At 5V max pot with 100 gain (INA181):\n5V / 100 = 50mV  ->  50mA
 Text Notes 8100 4400 0    50   ~ 0
 NTR3C21NZ\nor FDN339AN\n\n(FDV301N max current too low)
+Wire Wire Line
+	7400 4400 7400 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5FDC8427
+P 7050 4450
+F 0 "#PWR?" H 7050 4200 50  0001 C CNN
+F 1 "GND" H 7055 4277 50  0000 C CNN
+F 2 "" H 7050 4450 50  0001 C CNN
+F 3 "" H 7050 4450 50  0001 C CNN
+	1    7050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5150 6400 5150
+Connection ~ 6300 5150
+Wire Wire Line
+	7000 5050 7250 5050
+Wire Wire Line
+	7000 5250 7250 5250
+Wire Wire Line
+	8850 2000 8850 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5FDE7EE2
+P 8500 2050
+F 0 "#PWR?" H 8500 1800 50  0001 C CNN
+F 1 "GND" H 8500 1900 50  0000 C CNN
+F 2 "" H 8500 2050 50  0001 C CNN
+F 3 "" H 8500 2050 50  0001 C CNN
+	1    8500 2050
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 3800 0    50   ~ 0
+Higher voltage OK
+Text Notes 8850 1400 0    50   ~ 0
+Higher voltage OK
 $EndSCHEMATC

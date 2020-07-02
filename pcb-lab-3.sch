@@ -33,10 +33,8 @@ U 5FAF0069
 F0 "uC PWM-controlled constant current" 50
 F1 "pcb-lab-3c.sch" 50
 $EndSheet
-Text Notes 4000 1250 0    50   ~ 0
-TODO: review resistor and voltage ranges
 Text Notes 6500 1250 0    50   ~ 0
-TODO: review resistor, voltage ranges\nRC-filter values
+TODO: \nRC-filter values
 Text Notes 5800 3250 0    50   ~ 0
 TODO:\n- high Vf LED drivers\n- BCR421 circuit
 $EndSCHEMATC
