@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "PCB Lab 3"
 Date "2020-06-14"
 Rev ""
@@ -35,6 +35,10 @@ F1 "pcb-lab-3c.sch" 50
 $EndSheet
 Text Notes 6500 1250 0    50   ~ 0
 TODO: \nRC-filter values
-Text Notes 5800 3250 0    50   ~ 0
-TODO:\n- high Vf LED drivers\n- BCR421 circuit
+$Sheet
+S 1500 3500 1500 1000
+U 5FDFF407
+F0 "BCR421-based driver" 50
+F1 "pcb-lab-3d.sch" 50
+$EndSheet
 $EndSCHEMATC
