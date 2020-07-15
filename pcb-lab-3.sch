@@ -13,7 +13,7 @@ Comment2 "(C) Vlad Belous"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 1500 3000 0    50   ~ 0
+Text Notes 4050 3900 0    50   ~ 0
 NCS2333\nOffset voltage:  6uV (typ), 30uV (max)\nBias current:  60pA (typ), 400pA (max)
 $Sheet
 S 1500 1500 1500 1000
@@ -33,12 +33,24 @@ U 5FAF0069
 F0 "uC PWM-controlled constant current" 50
 F1 "pcb-lab-3c.sch" 50
 $EndSheet
-Text Notes 6500 1250 0    50   ~ 0
-TODO: \nRC-filter values
 $Sheet
 S 1500 3500 1500 1000
 U 5FDFF407
 F0 "BCR421-based driver" 50
 F1 "pcb-lab-3d.sch" 50
 $EndSheet
+Text Notes 4000 3600 0    50   ~ 0
+NOTES:
+Text Notes 4050 4100 0    50   ~ 0
+INA181A3 gain: 100
+Text Notes 4050 4350 0    50   ~ 0
+RC (2nd order) filter for PWM-controlled driver:\nfc = 48Hz;  at 1kHz get approx -40 dB.
+Wire Notes Line
+	4000 3600 6150 3600
+Wire Notes Line
+	6150 3600 6150 4450
+Wire Notes Line
+	6150 4450 4000 4450
+Wire Notes Line
+	4000 4450 4000 3600
 $EndSCHEMATC
