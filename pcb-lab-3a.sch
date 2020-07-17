@@ -18,8 +18,8 @@ L local_symbols:NCS2333 U?
 U 1 1 5FA19E39
 P 1950 2350
 AR Path="/5FA19E39" Ref="U?"  Part="1" 
-AR Path="/5F9D006C/5FA19E39" Ref="U?"  Part="1" 
-F 0 "U?" H 1650 2400 50  0000 L CNN
+AR Path="/5F9D006C/5FA19E39" Ref="U1"  Part="1" 
+F 0 "U1" H 1650 2400 50  0000 L CNN
 F 1 "NCS2333" H 1450 2250 50  0000 L CNN
 F 2 "local_footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HS" H 1950 2000 50  0001 C CNN
 F 3 "" H 2000 2350 50  0001 C CNN
@@ -57,10 +57,10 @@ L Device:C C?
 U 1 1 5FA19E4B
 P 2300 2300
 AR Path="/5FA19E4B" Ref="C?"  Part="1" 
-AR Path="/5F9D006C/5FA19E4B" Ref="C?"  Part="1" 
-F 0 "C?" H 2415 2347 50  0000 L CNN
+AR Path="/5F9D006C/5FA19E4B" Ref="C1"  Part="1" 
+F 0 "C1" H 2415 2347 50  0000 L CNN
 F 1 "0.1u" H 2415 2254 50  0000 L CNN
-F 2 "" H 2338 2150 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 2338 2150 50  0001 C CNN
 F 3 "~" H 2300 2300 50  0001 C CNN
 	1    2300 2300
 	1    0    0    -1  
@@ -70,10 +70,10 @@ L Device:C C?
 U 1 1 5FA19E51
 P 2700 2300
 AR Path="/5FA19E51" Ref="C?"  Part="1" 
-AR Path="/5F9D006C/5FA19E51" Ref="C?"  Part="1" 
-F 0 "C?" H 2815 2347 50  0000 L CNN
+AR Path="/5F9D006C/5FA19E51" Ref="C2"  Part="1" 
+F 0 "C2" H 2815 2347 50  0000 L CNN
 F 1 "1u" H 2815 2254 50  0000 L CNN
-F 2 "" H 2738 2150 50  0001 C CNN
+F 2 "local_footprints:1206_HS" H 2738 2150 50  0001 C CNN
 F 3 "~" H 2700 2300 50  0001 C CNN
 	1    2700 2300
 	1    0    0    -1  
@@ -107,10 +107,10 @@ Wire Wire Line
 Wire Wire Line
 	2300 2000 2700 2000
 $Comp
-L local_symbols:NCS2333 U?
+L local_symbols:NCS2333 U1
 U 2 1 5FA43C2A
 P 6200 2350
-F 0 "U?" H 6150 2650 50  0000 C CNN
+F 0 "U1" H 6150 2650 50  0000 C CNN
 F 1 "NCS2333" H 6250 2550 50  0000 C CNN
 F 2 "local_footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HS" H 6200 2000 50  0001 C CNN
 F 3 "" H 6250 2350 50  0001 C CNN
@@ -118,23 +118,23 @@ F 3 "" H 6250 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GSD Q?
+L Device:Q_NMOS_GSD Q1
 U 1 1 5FA43C30
 P 7900 2350
-F 0 "Q?" H 8150 2300 50  0000 L CNN
+F 0 "Q1" H 8150 2300 50  0000 L CNN
 F 1 "Q_NMOS_GSD" H 8150 2400 50  0000 L CNN
-F 2 "" H 8100 2450 50  0001 C CNN
+F 2 "local_footprints:SOT-23_HS" H 8100 2450 50  0001 C CNN
 F 3 "~" H 7900 2350 50  0001 C CNN
 	1    7900 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Potentiometer_Digital:MCP4011-xxxxSN U?
+L Potentiometer_Digital:MCP4011-xxxxSN U2
 U 1 1 5FA43C36
 P 4300 2350
-F 0 "U?" H 4300 2800 50  0000 C CNN
+F 0 "U2" H 4300 2800 50  0000 C CNN
 F 1 "MCP4011" H 4400 2700 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4350 2100 50  0001 L CNN
+F 2 "local_footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HS" H 4350 2100 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21978c.pdf, SOIC-8" H 4350 1800 50  0001 L CNN
 	1    4300 2350
 	1    0    0    -1  
@@ -155,23 +155,23 @@ Pot 25k -> 26.6 mA\nPot 50k -> 53.3 mA
 Text Notes 4000 3200 0    50   ~ 0
 Digital 50k pot\n1 step = 794 Ohm
 $Comp
-L Device:R_Small R?
+L Device:R_Small R3
 U 1 1 5FA43C44
 P 6850 3150
-F 0 "R?" H 6792 3104 50  0000 R CNN
+F 0 "R3" H 6792 3104 50  0000 R CNN
 F 1 "100k" H 6792 3195 50  0000 R CNN
-F 2 "" H 6850 3150 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 6850 3150 50  0001 C CNN
 F 3 "~" H 6850 3150 50  0001 C CNN
 	1    6850 3150
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R4
 U 1 1 5FA43C4A
 P 6850 3450
-F 0 "R?" H 6791 3404 50  0000 R CNN
+F 0 "R4" H 6791 3404 50  0000 R CNN
 F 1 "3.3k" H 6791 3495 50  0000 R CNN
-F 2 "" H 6850 3450 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 6850 3450 50  0001 C CNN
 F 3 "~" H 6850 3450 50  0001 C CNN
 	1    6850 3450
 	1    0    0    1   
@@ -205,10 +205,10 @@ F 3 "" H 6850 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local_symbols:NCS2333 U?
+L local_symbols:NCS2333 U1
 U 3 1 5FA43C5F
 P 7200 3000
-F 0 "U?" H 7150 3300 50  0000 C CNN
+F 0 "U1" H 7150 3300 50  0000 C CNN
 F 1 "NCS2333" H 7250 3200 50  0000 C CNN
 F 2 "local_footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HS" H 7200 2650 50  0001 C CNN
 F 3 "" H 7250 3000 50  0001 C CNN
@@ -231,12 +231,12 @@ Wire Wire Line
 Wire Wire Line
 	4200 2700 4750 2700
 $Comp
-L Device:R_Small R?
+L Device:R_Small R1
 U 1 1 5FA43C6D
 P 5200 2000
-F 0 "R?" H 5141 1954 50  0000 R CNN
+F 0 "R1" H 5141 1954 50  0000 R CNN
 F 1 "100k" H 5141 2045 50  0000 R CNN
-F 2 "" H 5200 2000 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 5200 2000 50  0001 C CNN
 F 3 "~" H 5200 2000 50  0001 C CNN
 	1    5200 2000
 	1    0    0    1   
@@ -264,12 +264,12 @@ F 3 "" H 4200 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV1
 U 1 1 5FA43C83
 P 5200 2300
-F 0 "RV?" H 5130 2346 50  0000 R CNN
+F 0 "RV1" H 5130 2346 50  0000 R CNN
 F 1 "50k" H 5130 2255 50  0000 R CNN
-F 2 "" H 5200 2300 50  0001 C CNN
+F 2 "local_footprints:Conn_01x03_small" H 5200 2300 50  0001 C CNN
 F 3 "~" H 5200 2300 50  0001 C CNN
 	1    5200 2300
 	1    0    0    -1  
@@ -295,12 +295,12 @@ Alternative\n50k pot
 Wire Notes Line
 	5850 1950 5850 2250
 $Comp
-L Device:C_Small C?
+L Device:C_Small C3
 U 1 1 5FA43C95
 P 5650 2500
-F 0 "C?" H 5750 2500 50  0000 L CNN
+F 0 "C3" H 5750 2500 50  0000 L CNN
 F 1 "0.1u" H 5700 2400 50  0000 L CNN
-F 2 "" H 5650 2500 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 5650 2500 50  0001 C CNN
 F 3 "~" H 5650 2500 50  0001 C CNN
 	1    5650 2500
 	-1   0    0    -1  
@@ -326,45 +326,45 @@ Wire Wire Line
 Text Notes 4750 3900 0    50   ~ 0
 2-OpAmp circuit similar\nto RC-Power BC6 charger
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP2
 U 1 1 5FA43CA7
 P 7150 2350
-F 0 "JP?" H 7150 2250 50  0000 C CNN
+F 0 "JP2" H 7150 2250 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 7150 2464 50  0001 C CNN
-F 2 "" H 7150 2350 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7150 2350 50  0001 C CNN
 F 3 "~" H 7150 2350 50  0001 C CNN
 	1    7150 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 5FA43CAD
 P 7150 2250
-F 0 "R?" V 7050 2350 50  0000 C CNN
+F 0 "R5" V 7050 2350 50  0000 C CNN
 F 1 "1k" V 7050 2200 50  0000 C CNN
-F 2 "" H 7150 2250 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 7150 2250 50  0001 C CNN
 F 3 "~" H 7150 2250 50  0001 C CNN
 	1    7150 2250
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 5FA43CB3
 P 6300 3000
-F 0 "JP?" H 6300 3113 50  0000 C CNN
+F 0 "JP1" H 6300 3113 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 6300 3114 50  0001 C CNN
-F 2 "" H 6300 3000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6300 3000 50  0001 C CNN
 F 3 "~" H 6300 3000 50  0001 C CNN
 	1    6300 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R2
 U 1 1 5FA43CB9
 P 6300 3100
-F 0 "R?" V 6200 3200 50  0000 C CNN
+F 0 "R2" V 6200 3200 50  0000 C CNN
 F 1 "1k" V 6200 3050 50  0000 C CNN
-F 2 "" H 6300 3100 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 6300 3100 50  0001 C CNN
 F 3 "~" H 6300 3100 50  0001 C CNN
 	1    6300 3100
 	0    1    -1   0   
@@ -380,12 +380,12 @@ Wire Wire Line
 Wire Wire Line
 	6450 3000 6450 3100
 $Comp
-L Device:C_Small C?
+L Device:C_Small C4
 U 1 1 5FA43CC4
 P 6300 2750
-F 0 "C?" V 6200 2850 50  0000 C CNN
+F 0 "C4" V 6200 2850 50  0000 C CNN
 F 1 "0.1u" V 6200 2650 50  0000 C CNN
-F 2 "" H 6300 2750 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 6300 2750 50  0001 C CNN
 F 3 "~" H 6300 2750 50  0001 C CNN
 	1    6300 2750
 	0    1    1    0   
@@ -417,12 +417,12 @@ Connection ~ 8000 2950
 Text Notes 6200 2600 0    31   ~ 0
 "slow-down"\noptional cap
 $Comp
-L Device:R_Small R?
+L Device:R_Small R6
 U 1 1 5FA43CDA
 P 7650 2500
-F 0 "R?" H 7592 2454 50  0000 R CNN
+F 0 "R6" H 7592 2454 50  0000 R CNN
 F 1 "100k" H 7592 2545 50  0000 R CNN
-F 2 "" H 7650 2500 50  0001 C CNN
+F 2 "local_footprints:0805_HS" H 7650 2500 50  0001 C CNN
 F 3 "~" H 7650 2500 50  0001 C CNN
 	1    7650 2500
 	1    0    0    1   
@@ -470,23 +470,23 @@ $EndComp
 Wire Wire Line
 	8000 2950 8000 3000
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5FA43CFC
 P 8000 3150
-F 0 "R?" H 8070 3196 50  0000 L CNN
+F 0 "R7" H 8070 3196 50  0000 L CNN
 F 1 "1" H 8070 3105 50  0000 L CNN
-F 2 "" V 7930 3150 50  0001 C CNN
+F 2 "local_footprints:1210_HS" V 7930 3150 50  0001 C CNN
 F 3 "~" H 8000 3150 50  0001 C CNN
 	1    8000 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J?
+L Connector:USB_B_Micro J1
 U 1 1 5FB78E24
 P 2050 5250
-F 0 "J?" H 2108 5720 50  0000 C CNN
+F 0 "J1" H 2108 5720 50  0000 C CNN
 F 1 "USB_B_Micro" H 2108 5627 50  0000 C CNN
-F 2 "" H 2200 5200 50  0001 C CNN
+F 2 "local_footprints:USB-micro-B_4-legs_Banggood" H 2200 5200 50  0001 C CNN
 F 3 "~" H 2200 5200 50  0001 C CNN
 	1    2050 5250
 	1    0    0    -1  
@@ -501,8 +501,8 @@ L power:GND #PWR?
 U 1 1 5FB7E894
 P 2050 5700
 AR Path="/5FB7E894" Ref="#PWR?"  Part="1" 
-AR Path="/5F9D006C/5FB7E894" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2050 5450 50  0001 C CNN
+AR Path="/5F9D006C/5FB7E894" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 2050 5450 50  0001 C CNN
 F 1 "GND" H 2055 5527 50  0000 C CNN
 F 2 "" H 2050 5700 50  0001 C CNN
 F 3 "" H 2050 5700 50  0001 C CNN
@@ -514,8 +514,8 @@ L power:+5V #PWR?
 U 1 1 5FB7FDBE
 P 2550 5000
 AR Path="/5FB7FDBE" Ref="#PWR?"  Part="1" 
-AR Path="/5F9D006C/5FB7FDBE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2550 4850 50  0001 C CNN
+AR Path="/5F9D006C/5FB7FDBE" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 2550 4850 50  0001 C CNN
 F 1 "+5V" H 2565 5173 50  0000 C CNN
 F 2 "" H 2550 5000 50  0001 C CNN
 F 3 "" H 2550 5000 50  0001 C CNN
@@ -530,12 +530,12 @@ NoConn ~ 2350 5250
 NoConn ~ 2350 5350
 NoConn ~ 2350 5450
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5FB86745
 P 3000 5050
-F 0 "J?" H 3000 5150 50  0000 C CNN
+F 0 "J2" H 3000 5150 50  0000 C CNN
 F 1 "Conn_01x02" H 2917 5177 50  0001 C CNN
-F 2 "" H 3000 5050 50  0001 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x02_Pitch2.54mm" H 3000 5050 50  0001 C CNN
 F 3 "~" H 3000 5050 50  0001 C CNN
 	1    3000 5050
 	-1   0    0    -1  
@@ -545,8 +545,8 @@ L power:+5V #PWR?
 U 1 1 5FB87B2C
 P 3300 5000
 AR Path="/5FB87B2C" Ref="#PWR?"  Part="1" 
-AR Path="/5F9D006C/5FB87B2C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3300 4850 50  0001 C CNN
+AR Path="/5F9D006C/5FB87B2C" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 3300 4850 50  0001 C CNN
 F 1 "+5V" H 3315 5173 50  0000 C CNN
 F 2 "" H 3300 5000 50  0001 C CNN
 F 3 "" H 3300 5000 50  0001 C CNN
@@ -566,8 +566,8 @@ L power:GND #PWR?
 U 1 1 5FB8B24E
 P 3300 5200
 AR Path="/5FB8B24E" Ref="#PWR?"  Part="1" 
-AR Path="/5F9D006C/5FB8B24E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3300 4950 50  0001 C CNN
+AR Path="/5F9D006C/5FB8B24E" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 3300 4950 50  0001 C CNN
 F 1 "GND" H 3305 5027 50  0000 C CNN
 F 2 "" H 3300 5200 50  0001 C CNN
 F 3 "" H 3300 5200 50  0001 C CNN
@@ -575,12 +575,12 @@ F 3 "" H 3300 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J3
 U 1 1 5FB8C77D
 P 4000 5050
-F 0 "J?" H 4000 5150 50  0000 C CNN
+F 0 "J3" H 4000 5150 50  0000 C CNN
 F 1 "Conn_01x02" H 3917 5177 50  0001 C CNN
-F 2 "" H 4000 5050 50  0001 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x02_Pitch2.54mm" H 4000 5050 50  0001 C CNN
 F 3 "~" H 4000 5050 50  0001 C CNN
 	1    4000 5050
 	-1   0    0    -1  
@@ -588,12 +588,12 @@ $EndComp
 Text GLabel 5300 5050 2    50   Input ~ 0
 LOAD1+
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J4
 U 1 1 5FB8ED26
 P 5000 5050
-F 0 "J?" H 5000 5150 50  0000 C CNN
+F 0 "J4" H 5000 5150 50  0000 C CNN
 F 1 "Conn_01x02" H 4917 5177 50  0001 C CNN
-F 2 "" H 5000 5050 50  0001 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x02_Pitch2.54mm" H 5000 5050 50  0001 C CNN
 F 3 "~" H 5000 5050 50  0001 C CNN
 	1    5000 5050
 	-1   0    0    -1  
@@ -607,8 +607,8 @@ L power:GND #PWR?
 U 1 1 5FB915EC
 P 4300 5200
 AR Path="/5FB915EC" Ref="#PWR?"  Part="1" 
-AR Path="/5F9D006C/5FB915EC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4300 4950 50  0001 C CNN
+AR Path="/5F9D006C/5FB915EC" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 4300 4950 50  0001 C CNN
 F 1 "GND" H 4305 5027 50  0000 C CNN
 F 2 "" H 4300 5200 50  0001 C CNN
 F 3 "" H 4300 5200 50  0001 C CNN
@@ -626,12 +626,12 @@ Wire Wire Line
 Wire Wire Line
 	5200 5150 5300 5150
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP1
 U 1 1 5FB9D3C2
 P 6800 2850
-F 0 "TP?" V 6907 2922 50  0000 C CNN
+F 0 "TP1" V 6907 2922 50  0000 C CNN
 F 1 "TestPoint" V 6908 2922 50  0001 C CNN
-F 2 "" H 7000 2850 50  0001 C CNN
+F 2 "local_footprints:SMD-Pad_01x01" H 7000 2850 50  0001 C CNN
 F 3 "~" H 7000 2850 50  0001 C CNN
 	1    6800 2850
 	0    -1   -1   0   
@@ -656,12 +656,12 @@ W
 Text Label 4750 2450 0    50   ~ 0
 B
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J5
 U 1 1 5FBA63ED
 P 6500 5150
-F 0 "J?" H 6500 5350 50  0000 C CNN
+F 0 "J5" H 6500 5350 50  0000 C CNN
 F 1 "Conn_01x03" H 6417 5377 50  0001 C CNN
-F 2 "" H 6500 5150 50  0001 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 6500 5150 50  0001 C CNN
 F 3 "~" H 6500 5150 50  0001 C CNN
 	1    6500 5150
 	-1   0    0    -1  
@@ -681,12 +681,12 @@ B
 Text Notes 6350 5450 0    50   ~ 0
 Wiper test points
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J6
 U 1 1 5FBAF3D9
 P 7500 5100
-F 0 "J?" H 7500 5300 50  0000 C CNN
+F 0 "J6" H 7500 5300 50  0000 C CNN
 F 1 "Conn_01x04" H 7417 5327 50  0001 C CNN
-F 2 "" H 7500 5100 50  0001 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x04_Pitch2.54mm" H 7500 5100 50  0001 C CNN
 F 3 "~" H 7500 5100 50  0001 C CNN
 	1    7500 5100
 	-1   0    0    -1  
@@ -700,8 +700,8 @@ L power:+5V #PWR?
 U 1 1 5FBB26EC
 P 7800 4950
 AR Path="/5FBB26EC" Ref="#PWR?"  Part="1" 
-AR Path="/5F9D006C/5FBB26EC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7800 4800 50  0001 C CNN
+AR Path="/5F9D006C/5FBB26EC" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 7800 4800 50  0001 C CNN
 F 1 "+5V" H 7815 5123 50  0000 C CNN
 F 2 "" H 7800 4950 50  0001 C CNN
 F 3 "" H 7800 4950 50  0001 C CNN
@@ -725,8 +725,8 @@ L power:GND #PWR?
 U 1 1 5FBB9BAD
 P 7800 5350
 AR Path="/5FBB9BAD" Ref="#PWR?"  Part="1" 
-AR Path="/5F9D006C/5FBB9BAD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7800 5100 50  0001 C CNN
+AR Path="/5F9D006C/5FBB9BAD" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 7800 5100 50  0001 C CNN
 F 1 "GND" H 7805 5177 50  0000 C CNN
 F 2 "" H 7800 5350 50  0001 C CNN
 F 3 "" H 7800 5350 50  0001 C CNN
@@ -740,10 +740,10 @@ FDV301N:\n- max Vds: 25V\n- max Vgs: 8V\n- 0.35W\n\nNTR3C21NZ\n- max Vds: 20V\n-
 Wire Wire Line
 	8000 2550 8000 2950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR06
 U 1 1 5FDC6F17
 P 7650 2600
-F 0 "#PWR?" H 7650 2350 50  0001 C CNN
+F 0 "#PWR06" H 7650 2350 50  0001 C CNN
 F 1 "GND" H 7655 2427 50  0000 C CNN
 F 2 "" H 7650 2600 50  0001 C CNN
 F 3 "" H 7650 2600 50  0001 C CNN
