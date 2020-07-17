@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/vlad/KiCad-projects/pcb-lab-3/pcb-lab-3.sch)
+    (source ${KIPRJMOD}/pcb-lab-3.sch)
     (date "Thu 16 Jul 2020 11:55:05 PM PDT")
     (tool "Eeschema 5.1.6")
     (sheet (number 1) (name /) (tstamps /)
@@ -946,7 +946,7 @@
     (library (logical Potentiometer_Digital)
       (uri /app/share/kicad/library/Potentiometer_Digital.lib))
     (library (logical local_symbols)
-      (uri /home/vlad/KiCad-projects/pcb-lab-3/libs/symbols.lib)))
+      (uri ${KIPRJMOD}/libs/symbols.lib)))
   (nets
     (net (code 1) (name "Net-(Q1-Pad2)")
       (node (ref U1) (pin 5))
