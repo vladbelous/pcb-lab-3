@@ -21,7 +21,7 @@ AR Path="/5FB0DC80" Ref="RV?"  Part="1"
 AR Path="/5FAF0069/5FB0DC80" Ref="RV401"  Part="1" 
 F 0 "RV401" H 6050 2450 50  0000 R CNN
 F 1 "1k" H 6050 2350 50  0000 R CNN
-F 2 "local_footprints:Conn_01x03_small" H 6100 2400 50  0001 C CNN
+F 2 "local_footprints:RV-Pot_3-pin_2.54mm" H 6100 2400 50  0001 C CNN
 F 3 "~" H 6100 2400 50  0001 C CNN
 	1    6100 2400
 	1    0    0    -1  
@@ -75,7 +75,7 @@ AR Path="/5FB0DC99" Ref="JP?"  Part="1"
 AR Path="/5FAF0069/5FB0DC99" Ref="JP402"  Part="1" 
 F 0 "JP402" H 7600 2000 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 7600 2214 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7600 2100 50  0001 C CNN
+F 2 "local_footprints:SolderJumper-2_P1.3mm_Open" H 7600 2100 50  0001 C CNN
 F 3 "~" H 7600 2100 50  0001 C CNN
 	1    7600 2100
 	1    0    0    -1  
@@ -324,7 +324,7 @@ AR Path="/5FB0DD21" Ref="JP?"  Part="1"
 AR Path="/5FAF0069/5FB0DD21" Ref="JP403"  Part="1" 
 F 0 "JP403" H 7600 2450 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 7600 2664 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7600 2550 50  0001 C CNN
+F 2 "local_footprints:SolderJumper-2_P1.3mm_Open" H 7600 2550 50  0001 C CNN
 F 3 "~" H 7600 2550 50  0001 C CNN
 	1    7600 2550
 	1    0    0    -1  
@@ -535,7 +535,7 @@ AR Path="/5FB31C99" Ref="JP?"  Part="1"
 AR Path="/5FAF0069/5FB31C99" Ref="JP401"  Part="1" 
 F 0 "JP401" H 3900 1950 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 3900 2164 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3900 2050 50  0001 C CNN
+F 2 "local_footprints:SolderJumper-2_P1.3mm_Open" H 3900 2050 50  0001 C CNN
 F 3 "~" H 3900 2050 50  0001 C CNN
 	1    3900 2050
 	1    0    0    -1  
@@ -772,7 +772,7 @@ U 1 1 5FCEDDE2
 P 4750 1950
 F 0 "TP401" H 4700 2150 50  0000 L CNN
 F 1 "TestPoint" H 4600 2150 50  0001 L CNN
-F 2 "local_footprints:SMD-Pad_01x01" H 4950 1950 50  0001 C CNN
+F 2 "local_footprints:SMD-TestPoint_01x01" H 4950 1950 50  0001 C CNN
 F 3 "~" H 4950 1950 50  0001 C CNN
 	1    4750 1950
 	1    0    0    -1  
@@ -788,7 +788,7 @@ U 1 1 5FCF612B
 P 6700 3000
 F 0 "TP402" V 6800 3100 50  0000 C CNN
 F 1 "TestPoint" V 6808 3072 50  0001 C CNN
-F 2 "local_footprints:SMD-Pad_01x01" H 6900 3000 50  0001 C CNN
+F 2 "local_footprints:SMD-TestPoint_01x01" H 6900 3000 50  0001 C CNN
 F 3 "~" H 6900 3000 50  0001 C CNN
 	1    6700 3000
 	0    -1   -1   0   

@@ -42,7 +42,7 @@ U 1 1 5FE029B0
 P 6700 2900
 F 0 "RV501" H 6630 2946 50  0000 R CNN
 F 1 "100" H 6630 2855 50  0000 R CNN
-F 2 "local_footprints:Conn_01x03_small" H 6700 2900 50  0001 C CNN
+F 2 "local_footprints:RV-Pot_3-pin_2.54mm" H 6700 2900 50  0001 C CNN
 F 3 "~" H 6700 2900 50  0001 C CNN
 	1    6700 2900
 	-1   0    0    -1  

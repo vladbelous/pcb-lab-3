@@ -269,7 +269,7 @@ U 1 1 5FA43C83
 P 5200 2300
 F 0 "RV1" H 5130 2346 50  0000 R CNN
 F 1 "50k" H 5130 2255 50  0000 R CNN
-F 2 "local_footprints:Conn_01x03_small" H 5200 2300 50  0001 C CNN
+F 2 "local_footprints:RV-Pot_3-pin_2.54mm" H 5200 2300 50  0001 C CNN
 F 3 "~" H 5200 2300 50  0001 C CNN
 	1    5200 2300
 	1    0    0    -1  
@@ -331,7 +331,7 @@ U 1 1 5FA43CA7
 P 7150 2350
 F 0 "JP2" H 7150 2250 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 7150 2464 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7150 2350 50  0001 C CNN
+F 2 "local_footprints:SolderJumper-2_P1.3mm_Open" H 7150 2350 50  0001 C CNN
 F 3 "~" H 7150 2350 50  0001 C CNN
 	1    7150 2350
 	1    0    0    -1  
@@ -353,7 +353,7 @@ U 1 1 5FA43CB3
 P 6300 3000
 F 0 "JP1" H 6300 3113 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 6300 3114 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6300 3000 50  0001 C CNN
+F 2 "local_footprints:SolderJumper-2_P1.3mm_Open" H 6300 3000 50  0001 C CNN
 F 3 "~" H 6300 3000 50  0001 C CNN
 	1    6300 3000
 	1    0    0    -1  
@@ -631,7 +631,7 @@ U 1 1 5FB9D3C2
 P 6800 2850
 F 0 "TP1" V 6907 2922 50  0000 C CNN
 F 1 "TestPoint" V 6908 2922 50  0001 C CNN
-F 2 "local_footprints:SMD-Pad_01x01" H 7000 2850 50  0001 C CNN
+F 2 "local_footprints:SMD-TestPoint_01x01" H 7000 2850 50  0001 C CNN
 F 3 "~" H 7000 2850 50  0001 C CNN
 	1    6800 2850
 	0    -1   -1   0   
