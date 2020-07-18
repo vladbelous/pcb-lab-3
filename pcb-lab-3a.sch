@@ -708,11 +708,11 @@ F 3 "" H 7800 4950 50  0001 C CNN
 	1    7800 4950
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 5100 2    50   Input ~ 0
+Text GLabel 7800 5200 2    50   Input ~ 0
 CTRL_UD
 Wire Wire Line
 	7700 5100 7800 5100
-Text GLabel 7800 5200 2    50   Input ~ 0
+Text GLabel 7800 5100 2    50   Input ~ 0
 CTRL_~CS
 Wire Wire Line
 	7700 5200 7800 5200
