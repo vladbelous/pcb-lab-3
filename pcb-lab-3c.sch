@@ -14,19 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_POT RV?
-U 1 1 5FB0DC80
-P 6100 2400
-AR Path="/5FB0DC80" Ref="RV?"  Part="1" 
-AR Path="/5FAF0069/5FB0DC80" Ref="RV401"  Part="1" 
-F 0 "RV401" H 6050 2450 50  0000 R CNN
-F 1 "1k" H 6050 2350 50  0000 R CNN
-F 2 "local_footprints:RV-Pot_3-pin_2.54mm" H 6100 2400 50  0001 C CNN
-F 3 "~" H 6100 2400 50  0001 C CNN
-	1    6100 2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NMOS_GSD Q?
 U 1 1 5FB0DC86
 P 8300 2100
@@ -230,19 +217,6 @@ F 3 "" H 6950 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5FB0DCEB
-P 6100 2750
-AR Path="/5FB0DCEB" Ref="#PWR?"  Part="1" 
-AR Path="/5FAF0069/5FB0DCEB" Ref="#PWR0124"  Part="1" 
-F 0 "#PWR0124" H 6100 2500 50  0001 C CNN
-F 1 "GND" H 6105 2577 50  0000 C CNN
-F 2 "" H 6100 2750 50  0001 C CNN
-F 3 "" H 6100 2750 50  0001 C CNN
-	1    6100 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 5FB0DCF1
 P 4550 2200
@@ -407,33 +381,8 @@ F 3 "" H 6750 3750 50  0001 C CNN
 $EndComp
 Text Notes 4500 3750 0    50   ~ 0
 uC PWM-controlled constant current source:\n- 1st OpAmp is active filter\n- 2nd OpAmp controls current with transistor\n- INA181 provides gain for uC ADC to read
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 5FB0DD5C
-P 5650 2400
-AR Path="/5FB0DD5C" Ref="J?"  Part="1" 
-AR Path="/5FAF0069/5FB0DD5C" Ref="J406"  Part="1" 
-F 0 "J406" H 5678 2380 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 5678 2335 50  0001 L CNN
-F 2 "local_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 5650 2400 50  0001 C CNN
-F 3 "~" H 5650 2400 50  0001 C CNN
-	1    5650 2400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	6250 2400 6300 2400
-Wire Wire Line
-	6100 2550 6100 2700
-Wire Wire Line
-	6300 2600 6300 2400
-Wire Wire Line
-	6450 2400 6300 2400
-Connection ~ 6300 2400
-Wire Wire Line
-	5850 2700 6100 2700
-Connection ~ 6100 2700
-Wire Wire Line
-	6100 2700 6100 2750
+	3850 3450 3900 3450
 $Comp
 L local_symbols:NCS2333 U?
 U 1 1 5FB0DD76
@@ -890,52 +839,9 @@ F 3 "~" H 3350 5200 50  0001 C CNN
 $EndComp
 Text GLabel 6350 4600 2    50   Input ~ 0
 uC_ADC
-$Comp
-L Device:R_Small R403
-U 1 1 5FD5A975
-P 6100 2050
-F 0 "R403" H 5850 2100 50  0000 L CNN
-F 1 "100k" H 5850 2000 50  0000 L CNN
-F 2 "local_footprints:0805_HS" H 6100 2050 50  0001 C CNN
-F 3 "~" H 6100 2050 50  0001 C CNN
-	1    6100 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 2150 6100 2200
-Wire Wire Line
-	6100 2200 5900 2200
-Wire Wire Line
-	5900 2200 5900 2300
-Wire Wire Line
-	5900 2300 5850 2300
-Connection ~ 6100 2200
-Wire Wire Line
-	6100 2200 6100 2250
-Wire Wire Line
-	6300 2600 5900 2600
-Wire Wire Line
-	5900 2600 5900 2400
-Wire Wire Line
-	5900 2400 5850 2400
-Wire Wire Line
-	5850 2700 5850 2500
-Wire Wire Line
-	6100 1900 6100 1950
-Wire Wire Line
-	6450 2050 6450 2400
 Wire Wire Line
 	7450 3100 7700 3100
-Wire Wire Line
-	5500 2100 5800 2100
-Wire Wire Line
-	5800 2100 5800 1900
-Wire Wire Line
-	5800 1900 6100 1900
-Connection ~ 5500 2100
-Text Notes 5850 1800 0    50   ~ 0
-Pot max:\n5V * 1k/101k\n= 49.5mV
-Text Notes 8650 3150 0    50   ~ 0
+Text Notes 8700 3150 0    50   ~ 0
 max: 49.5mA\n\nuC ADC pin:\nwith INA181 (100 gain) 4.95V
 Wire Wire Line
 	8400 3150 8400 3200
@@ -965,4 +871,77 @@ F 3 "" H 8050 2350 50  0001 C CNN
 $EndComp
 Text Notes 8400 1700 0    50   ~ 0
 Higher voltage OK
+$Comp
+L Device:R_Small R403
+U 1 1 5F2831FD
+P 6000 2250
+F 0 "R403" H 6059 2296 50  0000 L CNN
+F 1 "10k" H 6059 2205 50  0000 L CNN
+F 2 "local_footprints:1206_HS" H 6000 2250 50  0001 C CNN
+F 3 "~" H 6000 2250 50  0001 C CNN
+	1    6000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R408
+U 1 1 5F28393F
+P 6000 2550
+F 0 "R408" H 6059 2596 50  0000 L CNN
+F 1 "100" H 6059 2505 50  0000 L CNN
+F 2 "local_footprints:1206_HS" H 6000 2550 50  0001 C CNN
+F 3 "~" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	1    0    0    -1  
+$EndComp
+Text Notes 5750 2050 0    50   ~ 0
+PWM max:\n5V * 100/10.1k\n= 49.5mV
+Wire Wire Line
+	6000 2350 6000 2400
+Wire Wire Line
+	6450 2400 6000 2400
+Connection ~ 6000 2400
+Wire Wire Line
+	6000 2400 6000 2450
+Wire Wire Line
+	6000 2100 6000 2150
+Connection ~ 5500 2100
+Wire Wire Line
+	6450 2050 6450 2400
+$Comp
+L Connector:Conn_01x02_Female J406
+U 1 1 5F2A07F6
+P 5650 2300
+F 0 "J406" H 5550 2100 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 5542 2394 50  0001 C CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 5650 2300 50  0001 C CNN
+F 3 "~" H 5650 2300 50  0001 C CNN
+	1    5650 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2100 5900 2100
+Wire Wire Line
+	5900 2300 5900 2100
+Connection ~ 5900 2100
+Wire Wire Line
+	5900 2100 6000 2100
+Wire Wire Line
+	6000 2650 6000 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5F2B87C7
+P 6000 2700
+AR Path="/5F2B87C7" Ref="#PWR?"  Part="1" 
+AR Path="/5FAF0069/5F2B87C7" Ref="#PWR0410"  Part="1" 
+F 0 "#PWR0410" H 6000 2450 50  0001 C CNN
+F 1 "GND" H 6005 2527 50  0000 C CNN
+F 2 "" H 6000 2700 50  0001 C CNN
+F 3 "" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2300 5900 2300
+Wire Wire Line
+	5850 2400 6000 2400
 $EndSCHEMATC
